@@ -54,7 +54,10 @@ pipeline {
       steps { 
               sh 'ls -a'
           sh 'rm -R vendor'
-          sh 'rm -R var'
+          sh 'rm -R docker'
+                    sh 'rm -R .git'
+                    sh 'rm -R .github'
+
               pushToCloudFoundry(
                   target: 'https://api.cf.us10.hana.ondemand.com/',
                   organization: '2b1f4fe8trial',
