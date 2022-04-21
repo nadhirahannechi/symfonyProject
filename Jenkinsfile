@@ -51,17 +51,12 @@ pipeline {
             }
           }
          stage('Build'){
-                    steps{
-                    sh 'composer install --no-progress --no-interaction'
-                    } 
-                }
-         stage('Archive') { 
-       agent none 
-       steps { 
+          steps{
            sh 'tar -cvzf dist.tar.gz --strip-components=1 coverge' 
-           archive 'coverge.tar.gz' 
-          } 
-       } 
+           archive 'coverge.tar.gz'                     } 
+                }
+    
+       
 
    stage('Nexus Upload Stage') {
      agent none 
