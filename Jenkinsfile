@@ -54,7 +54,7 @@ pipeline {
       steps { 
               sh 'ls -a'
           sh 'rm -R vendor'
-          sh 'rm -R docker'
+          sh 'rm -R .docker'
                     sh 'rm -R .git'
                     sh 'rm -R .github'
                     sh 'rm -R tests'
