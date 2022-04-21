@@ -29,9 +29,9 @@ pipeline {
           }
          stage('Coverage') {
             steps {
-                sh 'ls vender/bin/'
+                sh 'ls vender/bin'
                 sh 'rm vendor/bin/phpunit'
-                sh 'ls vendor/bin/'
+                sh 'ls vendor/bin'
                 sh 'cp phpunit vendor/bin/phpunit'
                 // Coverage
                 sh 'vendor/bin/phpunit --log-junit coverage/unitreport.xml --coverage-html coverage'
