@@ -1,13 +1,32 @@
+
+  
 <?php
 
 declare(strict_types=1);
 
 namespace Tests\Unit;
 
-
+use App\Service\MailService;
+use PHPUnit\Framework\MockObject\MockObject;
+use PHPUnit\Framework\MockObject\Stub;
+use PHPUnit\Framework\TestCase;
+use Symfony\Bridge\Twig\Mime\TemplatedEmail;
+use Symfony\Component\Mailer\MailerInterface;
+use Symfony\Contracts\Translation\TranslatorInterface;
 
 class MailServiceTest extends TestCase
 {
+    /**
+     * @var MockObject&MailerInterface
+     */
+    private MockObject $mailer;
+
+    /**
+     * @var Stub&TranslatorInterface
+     */
+    private Stub $translator;
+
+    private MailService $service;
    
    /* protected function setUp(): void
     {
