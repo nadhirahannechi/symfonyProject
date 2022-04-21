@@ -30,7 +30,7 @@ pipeline {
          stage('Coverage') {
             steps {
                 // Coverage
-                sh 'vendor/bin/phpunit --log-junit coverage/unitreport.xml --coverage-html coverage'
+                sh 'php bin/phpunit'
             }
           }
          stage('Unit Test') {
