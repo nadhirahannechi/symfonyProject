@@ -57,6 +57,7 @@ pipeline {
           sh 'rm -R docker'
                     sh 'rm -R .git'
                     sh 'rm -R .github'
+                    sh 'rm -R tests'
 
               pushToCloudFoundry(
                   target: 'https://api.cf.us10.hana.ondemand.com/',
