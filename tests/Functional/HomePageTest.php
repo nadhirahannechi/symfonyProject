@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Tests\Functional;
 
+use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
+use Zenstruck\Browser\Test\HasBrowser;
+use Zenstruck\Foundry\Test\ResetDatabase;
 
 class HomePageTest extends KernelTestCase
 {
+    use HasBrowser;
+    use ResetDatabase;
 
     /**
      * @test
