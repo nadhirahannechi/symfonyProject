@@ -26,8 +26,8 @@ class MailServiceTest extends TestCase
 
     private MailService $service;
    
-   /* protected function setUp(): void
-    {
+    protected function setUp(): void
+    {/*
         $this->mailer = $this->createMock(MailerInterface::class);
         $this->translator = $this->createStub(TranslatorInterface::class);
 
@@ -36,14 +36,14 @@ class MailServiceTest extends TestCase
             $this->translator,
             'from@symfony.local',
             ['bcc@symfony.local']
-        );
-    }*/
+        );*/
+    }
 
     /**
      * @test
      */
-   /* public function itSendsAnEmail(): void
-    {
+    public function itSendsAnEmail(): void
+    {/*
         $this->translator->method('trans')->willReturnMap([
             ['email.from_name', [], null, 'en', 'From Name'],
             ['subject', [], null, 'en', 'Subject'],
@@ -51,6 +51,6 @@ class MailServiceTest extends TestCase
         $this->mailer->expects(static::once())->method('send')->with(static::isInstanceOf(TemplatedEmail::class));
 
         $this->service->setLocale('en');
-        $this->service->send('to@symfony.local', 'subject', 'template');
-    }*/
+        $this->service->send('to@symfony.local', 'subject', 'template');*/
+    }
 }
