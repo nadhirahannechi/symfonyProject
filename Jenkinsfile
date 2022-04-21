@@ -51,7 +51,7 @@ pipeline {
             }
           }
          stage('Build'){
-            agent none
+            agent any
                     steps{
                       
                        sh "docker build -t symfony:latest ."
