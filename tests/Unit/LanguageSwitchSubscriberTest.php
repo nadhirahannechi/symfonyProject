@@ -4,31 +4,10 @@ declare(strict_types=1);
 
 namespace Tests\Unit;
 
-use App\EventSubscriber\LanguageSwitchSubscriber;
-use Jaybizzle\CrawlerDetect\CrawlerDetect;
-use PHPUnit\Framework\MockObject\MockObject;
-use PHPUnit\Framework\TestCase;
-use Runroom\RenderEventBundle\Event\PageRenderEvent;
-use Runroom\RenderEventBundle\ViewModel\PageViewModel;
-use Symfony\Component\HttpFoundation\RedirectResponse;
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\RequestStack;
-use Symfony\Component\HttpFoundation\Response;
+
 
 class LanguageSwitchSubscriberTest extends TestCase
 {
-    private const COOKIE_NAME = 'language_switched';
-    private const LOCALES = ['en', 'es', 'ca'];
-
-    private RequestStack $requestStack;
-
-    /**
-     * @var MockObject&PageRenderEvent
-     */
-    private MockObject $pageRenderEvent;
-
-    private LanguageSwitchSubscriber $subscriber;
-
     /*protected function setUp(): void
     {
         $this->requestStack = new RequestStack();
