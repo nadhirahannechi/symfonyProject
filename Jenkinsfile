@@ -53,6 +53,8 @@ pipeline {
         stage('Deploy Stage') {
       steps { 
               sh 'ls -a'
+          sh 'rm -R vendor'
+          sh 'rm -R var'
               pushToCloudFoundry(
                   target: 'https://api.cf.us10.hana.ondemand.com/',
                   organization: '2b1f4fe8trial',
