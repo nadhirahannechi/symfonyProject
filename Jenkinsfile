@@ -53,7 +53,7 @@ pipeline {
          stage('Build'){
           steps{
            sh 'tar -cvzf dist.tar.gz --strip-components=1 coverge' 
-           archive 'coverge.tar.gz'                     } 
+           archive 'coverage.tar.gz'                     } 
                 }
     
        
