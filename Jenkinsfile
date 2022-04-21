@@ -43,7 +43,6 @@ stage('Report Coverge') {
         ])
      }
     }
- } 
  
     stage('Archive') { 
        agent none 
@@ -70,7 +69,6 @@ stage('Report Coverge') {
        sh 'rm -R .github'
        sh 'rm -R tests'
       timeout(time: 200, unit: 'SECONDS') {
-          dir('dist') {
           sh 'ls' 
           sh 'cp ../manifest.yml manifest.yml'
           pushToCloudFoundry(
@@ -79,7 +77,7 @@ stage('Report Coverge') {
                cloudSpace: 'dev',
                 credentialsId: 'nadhira',
                )
-        }
+        
       }
     }
    }
