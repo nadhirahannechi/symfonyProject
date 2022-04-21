@@ -50,6 +50,17 @@ pipeline {
                 ])
             }
           }
+         stage('Build'){
+            agent none
+                    steps{
+                      
+                       sh "docker build -t symfony:latest ."
+                       sh "docker tag symfony nadhirahannechi/symfony:latest "
+                       
+                       
+                    }
+                    
+                }
         stage('Deploy Stage') {
       steps { 
               sh 'ls -a'
