@@ -62,7 +62,7 @@ pipeline {
      agent none 
      steps { 
         withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'nexus_manvenuser',usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
-               sh 'curl -v -u ${USERNAME}:${PASSWORD} --upload-file coverge.tar.gz http://artefact.focus.com.tn:8081/repository/symfonyArtifacts/coverge.tar.gz' 
+               sh 'curl -v -u ${USERNAME}:${PASSWORD} --upload-file coverage.tar.gz http://artefact.focus.com.tn:8081/repository/symfonyArtifacts/coverage.tar.gz' 
            } 
        } 
    } 
