@@ -31,13 +31,13 @@ pipeline {
             steps {
                 sh 'pwd'
                 sh 'ls vendor/bin'
-                sh 'rm vendor/bin/phpunit'
+               // sh 'rm vendor/bin/phpunit'
                 sh 'ls vendor/bin'
-                sh 'cp phpunit vendor/bin/phpunit'
+               // sh 'cp phpunit vendor/bin/phpunit'
                 sh 'ls vendor/bin'
-                sh 'chmod 777 -R vendor'
+                //sh 'chmod 777 -R vendor'
                 // Coverage
-                sh 'php ./vendor/bin/phpunit --log-junit coverage/unitreport.xml --coverage-html coverage'
+               // sh 'php ./vendor/bin/phpunit --log-junit coverage/unitreport.xml --coverage-html coverage'
             }
           }
          stage('Unit Test') {
