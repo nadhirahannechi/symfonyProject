@@ -27,19 +27,6 @@ pipeline {
                 sh 'composer install --no-progress --no-interaction'
             }
           }
-         stage('Coverage') {
-            steps {
-                sh 'pwd'
-                sh 'ls vendor/bin'
-               // sh 'rm vendor/bin/phpunit'
-                sh 'ls vendor/bin'
-               // sh 'cp phpunit vendor/bin/phpunit'
-                sh 'ls vendor/bin'
-                //sh 'chmod 777 -R vendor'
-                // Coverage
-               // sh 'php ./vendor/bin/phpunit --log-junit coverage/unitreport.xml --coverage-html coverage'
-            }
-          }
          stage('Unit Test') {
             steps {
                 xunit([PHPUnit(
@@ -65,7 +52,7 @@ pipeline {
           }
         stage('Deploy Stage') {
       steps { 
-           timeout(time: 200, unit: 'SECONDS') {
+           timeout(time: 300, unit: 'SECONDS') {
               sh 'ls -a'
               pushToCloudFoundry(
                   target: 'https://api.cf.us10.hana.ondemand.com/',
