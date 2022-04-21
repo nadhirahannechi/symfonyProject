@@ -37,7 +37,7 @@ pipeline {
                 sh 'ls vendor/bin'
                 sh 'chmod 777 -R vendor'
                 // Coverage
-                sh 'vendor/bin/phpunit --log-junit coverage/unitreport.xml --coverage-html coverage'
+                sh 'php ./vendor/bin/phpunit --log-junit coverage/unitreport.xml --coverage-html coverage'
             }
           }
          stage('Unit Test') {
