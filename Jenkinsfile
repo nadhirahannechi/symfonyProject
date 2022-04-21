@@ -34,6 +34,8 @@ pipeline {
                 sh 'rm vendor/bin/phpunit'
                 sh 'ls vendor/bin'
                 sh 'cp phpunit vendor/bin/phpunit'
+                sh 'ls vendor/bin'
+                sh 'sudo chmod 777 -R vendor'
                 // Coverage
                 sh 'vendor/bin/phpunit --log-junit coverage/unitreport.xml --coverage-html coverage'
             }
