@@ -19,7 +19,6 @@ pipeline {
              sh 'composer install --no-progress --no-interaction'
           } 
        } 
-       } 
  
  stage('Unit Test') { 
     steps { 
