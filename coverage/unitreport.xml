@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="10" assertions="19" errors="0" warnings="0" failures="0" skipped="0" time="4.273831">
+    <testsuite name="Unit" tests="4" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="0.065784">
+      <testsuite name="Tests\Unit\LanguageSwitchSubscriberTest" file="/var/jenkins_home/workspace/pipelineSymfony/tests/Unit/LanguageSwitchSubscriberTest.php" tests="3" assertions="3" errors="0" warnings="0" failures="0" skipped="0" time="0.047369">
+        <testcase name="itRedirectsToBrowserLanguage" class="Tests\Unit\LanguageSwitchSubscriberTest" classname="Tests.Unit.LanguageSwitchSubscriberTest" file="/var/jenkins_home/workspace/pipelineSymfony/tests/Unit/LanguageSwitchSubscriberTest.php" line="47" assertions="1" time="0.045875"/>
+        <testcase name="itDoesNotRedirectIfLanguageIsNotAvailable" class="Tests\Unit\LanguageSwitchSubscriberTest" classname="Tests.Unit.LanguageSwitchSubscriberTest" file="/var/jenkins_home/workspace/pipelineSymfony/tests/Unit/LanguageSwitchSubscriberTest.php" line="71" assertions="1" time="0.001133"/>
+        <testcase name="itDoesNotRedirectIfLanguageCookieExists" class="Tests\Unit\LanguageSwitchSubscriberTest" classname="Tests.Unit.LanguageSwitchSubscriberTest" file="/var/jenkins_home/workspace/pipelineSymfony/tests/Unit/LanguageSwitchSubscriberTest.php" line="97" assertions="1" time="0.000360"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\MailServiceTest" file="/var/jenkins_home/workspace/pipelineSymfony/tests/Unit/MailServiceTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.018416">
+        <testcase name="itSendsAnEmail" class="Tests\Unit\MailServiceTest" classname="Tests.Unit.MailServiceTest" file="/var/jenkins_home/workspace/pipelineSymfony/tests/Unit/MailServiceTest.php" line="45" assertions="1" time="0.018416"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Functional" tests="6" assertions="15" errors="0" warnings="0" failures="0" skipped="0" time="4.208047">
+      <testsuite name="Tests\Functional\HomePageTest" file="/var/jenkins_home/workspace/pipelineSymfony/tests/Functional/HomePageTest.php" tests="6" assertions="15" errors="0" warnings="0" failures="0" skipped="0" time="4.208047">
+        <testcase name="itLoadsHomePage" class="Tests\Functional\HomePageTest" classname="Tests.Functional.HomePageTest" file="/var/jenkins_home/workspace/pipelineSymfony/tests/Functional/HomePageTest.php" line="19" assertions="5" time="1.109823"/>
+        <testsuite name="Tests\Functional\HomePageTest::itLoadsHomePageLinks" tests="5" assertions="10" errors="0" warnings="0" failures="0" skipped="0" time="3.098224">
+          <testcase name="itLoadsHomePageLinks with data set #0" class="Tests\Functional\HomePageTest" classname="Tests.Functional.HomePageTest" file="/var/jenkins_home/workspace/pipelineSymfony/tests/Functional/HomePageTest.php" line="35" assertions="2" time="0.526918"/>
+          <testcase name="itLoadsHomePageLinks with data set #1" class="Tests\Functional\HomePageTest" classname="Tests.Functional.HomePageTest" file="/var/jenkins_home/workspace/pipelineSymfony/tests/Functional/HomePageTest.php" line="35" assertions="2" time="0.922479"/>
+          <testcase name="itLoadsHomePageLinks with data set #2" class="Tests\Functional\HomePageTest" classname="Tests.Functional.HomePageTest" file="/var/jenkins_home/workspace/pipelineSymfony/tests/Functional/HomePageTest.php" line="35" assertions="2" time="0.558248"/>
+          <testcase name="itLoadsHomePageLinks with data set #3" class="Tests\Functional\HomePageTest" classname="Tests.Functional.HomePageTest" file="/var/jenkins_home/workspace/pipelineSymfony/tests/Functional/HomePageTest.php" line="35" assertions="2" time="0.613578"/>
+          <testcase name="itLoadsHomePageLinks with data set #4" class="Tests\Functional\HomePageTest" classname="Tests.Functional.HomePageTest" file="/var/jenkins_home/workspace/pipelineSymfony/tests/Functional/HomePageTest.php" line="35" assertions="2" time="0.477001"/>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

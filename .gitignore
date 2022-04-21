@@ -15,7 +15,6 @@
 .php-cs-fixer.cache
 .phpunit.result.cache
 config/secrets/*/*.decrypt.private.php
-coverage
 var
 vendor
 phpstan.neon
