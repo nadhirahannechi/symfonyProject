@@ -61,7 +61,7 @@ pipeline {
                   cloudSpace: 'dev',
                   credentialsId: 'nadhira',
                 )
-         }
+         
       }
     }
            
