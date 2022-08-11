@@ -1,6 +1,6 @@
 ---
 applications:
-- name: symfony-demo
+- name: symfony-pipeline
   buildpack: https://github.com/cloudfoundry/php-buildpack.git
   instance: 1
   memory: 150M
