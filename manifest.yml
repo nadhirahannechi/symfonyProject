@@ -1,6 +1,6 @@
 ---
 applications:
-- name: symfony-pipeline
+- name: symfony-pfe
   buildpack: https://github.com/cloudfoundry/php-buildpack.git
   instance: 1
   memory: 150M
